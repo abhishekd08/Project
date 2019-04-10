@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <EditText
+        android:id="@+id/profileactivity_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/profileactivity_height_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="height"
+        app:layout_constraintTop_toBottomOf="@id/profileactivity_name_edittext" />
+
+    <View
+        android:id="@+id/profileactivity_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@id/profileactivity_height_edittext" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Here comes the measurements with good ui"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileactivity_horizontal_line" />
+
+</android.support.constraint.ConstraintLayout>
